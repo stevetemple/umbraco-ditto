@@ -2,6 +2,7 @@
 using Our.Umbraco.Ditto.Tests.Mocks;
 using Umbraco.Core;
 using Umbraco.Core.Models;
+using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
 namespace Our.Umbraco.Ditto.PerformanceTests
@@ -23,7 +24,6 @@ namespace Our.Umbraco.Ditto.PerformanceTests
         public class NullContextAccessor : IDittoContextAccessor
         {
             public UmbracoContext UmbracoContext => default(UmbracoContext);
-            public ApplicationContext ApplicationContext => default(ApplicationContext);
         }
 
         public class NullProcessorAttribute : DittoProcessorAttribute

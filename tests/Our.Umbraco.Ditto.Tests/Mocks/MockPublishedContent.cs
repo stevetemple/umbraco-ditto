@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Moq;
-using Umbraco.Core.Logging;
 using Umbraco.Core.Models;
 using Umbraco.Core.Models.PublishedContent;
 
@@ -91,6 +89,11 @@ namespace Our.Umbraco.Ditto.Tests.Mocks
         }
 
         public PublishedCultureInfo GetCulture(string culture = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IPublishedContent.IsDraft(string culture)
         {
             throw new NotImplementedException();
         }
