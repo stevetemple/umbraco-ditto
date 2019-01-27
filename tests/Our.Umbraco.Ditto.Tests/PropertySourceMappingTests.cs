@@ -1,5 +1,4 @@
-﻿using System.Configuration;
-using System.Linq;
+﻿using System.Linq;
 using NUnit.Framework;
 using Our.Umbraco.Ditto.Tests.Mocks;
 
@@ -121,7 +120,7 @@ namespace Our.Umbraco.Ditto.Tests
 
             /* TODO : v8 : Not sure how to resolve this, probably DI replacement in v8
             //
-            // TODO: [LK:2016-08-12] Could we initalize this in an `SetUpFixture` method?
+            // TODO: [LK:2016-08-12] Could we initialize this in an `SetUpFixture` method?
             // Then it could apply across all unit-tests.
             //
             if (ResolverBase<LoggerResolver>.HasCurrent)
